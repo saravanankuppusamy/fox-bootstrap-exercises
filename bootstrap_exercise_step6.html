@@ -1,0 +1,211 @@
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox and Students Bootstrap Pre-built Components Execise</title>
+	<!-- Add bootstrap resources such js and css -->
+    <!-- Bootstrap CSS CDN -->
+	
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+            <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+		<!-- navbar: The main class that creates the navbar container, providing basic styling such as spacing and alignment.
+			navbar-expand-lg: Makes the navbar responsive, remaining collapsed on smaller screens and expanding into a horizontal menu at the large breakpoint (≥992px).
+			bg-body-tertiary: Applies a background color to the navbar using Bootstrap’s tertiary background scheme.-->
+			
+            <div class="container-fluid">
+			<!-- container-fluid is a class in Bootstrap CSS framework that creates a full width container -->
+			
+                <a class="navbar-brand" href="#company">Fox and Students Company !</a>
+				<!-- navbar-brand: Applied to the branding element (e.g., logo or website name), ensuring proper spacing and styling. -->
+				
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- navbar-toggler: The toggle button visible on smaller screens that collapses or expands the navbar content.	 -->
+					
+                    <span class="navbar-toggler-icon"></span>
+					<!-- navbar-toggler-icon: Applies a built-in icon to the toggle button, providing a visual indicator for expanding/collapsing the navbar. -->
+					
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<!-- collapse navbar-collapse: Collapses the navbar content on smaller screens and expands it on larger screens, working with the navbar-toggler. -->
+				
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<!-- navbar-nav: Styles the navigation items inside the navbar, providing appropriate spacing and layout for the list of links. -->
+					
+                        <li class="nav-item">
+						<!-- nav-item: Applied to each item in the navigation list, ensuring correct padding and alignment for individual links or dropdowns. -->
+						
+                            <a class="nav-link active" aria-current="page" href="#company">Home</a>
+							<!-- nav-link: Styles each link inside the navbar, providing correct text color, padding, and hover effects.
+								nav-link active: Highlights the current page’s link, applying distinct styling to make it visually different.
+							 -->
+							
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trainingprograms">Training Programs</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="#trainingservices">Training Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+						
+                            <a class="nav-link disabled" aria-disabled="true">Current Classes</a>
+							<!-- nav-link disabled: Disables the link, making it unclickable and visually distinct with lower opacity. -->
+							
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+	<main>	
+		<section id="company" class="d-flex align-items-center">
+        <div class="container">
+            <h1>Welcome to Fox and Students Company</h1>
+            <p>We serve people to make them happy and have fun and enjoy life!</p>
+        </div>
+    </section>
+		 
+		 <section id="trainingprograms" class="d-flex align-items-center">
+		 <div >
+            <h2>Training Programs Gallery</h2>
+            
+            <img src="https://www.w3.org/html/logo/img/mark-word-icon.png" alt="HTML5">
+			<img src="https://nodejs.org/static/logos/nodejsDark.svg" alt="Node JS">
+            <img src="https://www.python.org/static/img/python-logo.png" alt="Python">
+         </div>
+		 <div >
+            <h2>Training Programs Carousel !</h2>
+            <!-- Carousel -->
+			<!-- carousel: The main container for the carousel, establishing the structure necessary for creating a sliding image gallery. -->
+            <div id="carouselExample" class="carousel slide">
+			<!-- slide: Enables the sliding effect when transitioning between carousel items, adding styles for smooth animations. -->
+                <div class="carousel-inner">
+				<!-- carousel-inner: Contains all the carousel items, wrapping the individual slides and managing their display and transition effects. -->
+                    <div class="carousel-item active">
+					<!-- carousel-item: Applied to each individual item (or slide) within the carousel, defining specific styles and behaviors for each slide. The first item should also have the active class.
+					active: Indicates which carousel item is currently visible; only one item should have this class at any time to display as the active slide. -->
+                        <img src="https://www.w3.org/html/logo/img/mark-word-icon.png" class="d-block w-100 alt="HTML5">
+						<!-- d-block: Displays the image as a block-level element, allowing it to take up the full width of its parent container.
+						w-25: Makes the image take up 100% of the width of the parent container, ensuring responsiveness and proper fitting within the carousel. -->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://nodejs.org/static/logos/nodejsDark.svg" class="d-block w-100" alt="Node JS">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.python.org/static/img/python-logo.png" class="d-block w-100" alt="Python">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+				<!-- carousel-control-prev: Applied to the previous button in the carousel, allowing users to navigate to the previous slide.
+				data-bs-target="#carouselExample": Specifies the ID of the carousel to which the button should apply, linking the button to the corresponding carousel.
+				data-bs-slide="prev": Indicates that the button should navigate to the previous slide when clicked. -->
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<!-- carousel-control-prev-icon and carousel-control-next-icon: Used to apply the icons for the previous and next buttons, providing a visual cue for navigation. -->
+                    <span class="visually-hidden">Previous</span>
+					<!-- visually-hidden: Hides the text labels (“Previous” and “Next”) from sighted users while keeping them accessible to screen readers, enhancing accessibility.> -->
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+					<!-- carousel-control-next: Applied to the next button in the carousel, allowing users to navigate to the next slide.
+					data-bs-slide="next": Indicates that the button should navigate to the next slide when clicked. -->
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<!-- carousel-control-prev-icon and carousel-control-next-icon: Used to apply the icons for the previous and next buttons, providing a visual cue for navigation. -->
+                    <span class="visually-hidden">Next</span>
+					<!-- visually-hidden: Hides the text labels (“Previous” and “Next”) from sighted users while keeping them accessible to screen readers, enhancing accessibility.> -->
+                </button>
+            </div>
+			</div>
+			</section>
+			
+			<section id="trainingservices" class="d-flex align-items-center">
+			<div >
+            <h2>Our  Training Services</h2>
+			</div>
+          
+            <!-- Card Section -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+			<!-- card: This class creates a flexible and extensible content container. It acts as the main wrapper for the card component, providing styling and structure for the card’s content. -->
+                <img src="https://www.w3.org/html/logo/img/mark-word-icon.png"  class="card-img-top" alt="HTML5 Training">
+				<!-- card-img-top: This class is applied to the image within the card. It styles the image to be displayed at the top of the card and ensures it is responsive, adapting to the card’s width. -->
+                <div class="card-body">
+				<!-- card-body: This class wraps the main content of the card, including the title, text, and buttons. It provides appropriate padding and styling to ensure the content is well-organized and visually appealing. -->
+                    <h5 class="card-title">HTML5 Bootcamp</h5>
+					<!-- card-title: This class styles the title of the card, typically used for headings. It applies specific font styles and sizes to make the title stand out. -->
+					<p class="card-text">This is the most comprehensive course on the Practical aspects of HTML and CSS. 
+						In this course you will learn the web development process and how HTML & CSS fit into the picture.</p>
+					<!-- card-text: This class styles the text content of the card, providing default styling for paragraphs or descriptions, ensuring consistency and readability. -->
+                    <a href="#" class="btn btn-primary">More Details and Outline</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://nodejs.org/static/logos/nodejsDark.svg" class="card-img-top" alt="Node JS Backend Applications">
+                <div class="card-body">
+                    <h5 class="card-title">Node JS Backend Applications</h5>
+					<p class="card-text">This course introduces server-side web development with Node. js, 
+					teaching you the core concepts and preparing you for exploring frameworks like Express. js.</p>
+                    <a href="#" class="btn btn-primary">More details and enroll</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://www.python.org/static/img/python-logo.png" class="card-img-top" alt="Python Programming">
+                <div class="card-body">
+                    <h5 class="card-title">Python Programming </h5>
+					<p class="card-text">This Python course teaches students how to use the Python programming language to create programs, automate tasks, and analyze data</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+ <section id="contact" >
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+	</main>
+	<footer class="text-center">
+    <div class="container">
+        <p>Fox and Students Company © 2025</p>
+        <p>Contact us: email@foxstudents.com</p>
+    </div>
+</footer>
+</body>
+</html>
